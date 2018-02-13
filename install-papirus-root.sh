@@ -25,6 +25,7 @@ cat <<- EOF
 EOF
 
 temp_dir="$(mktemp -d)"
+echo $temp_dir
 
 echo "=> Getting the latest version from GitHub ..."
 wget -O "/tmp/$gh_repo.tar.gz" \
