@@ -3,6 +3,7 @@
 set -e
 
 gh_repo="papirus-filezilla-themes"
+echo $gh_repo
 gh_desc="Papirus Filezilla themes"
 
 cat <<- EOF
