@@ -46,7 +46,8 @@ cp -R \
   "$temp_dir/$gh_repo-master/papirus-adapta-nokto" \
   "$temp_dir/$gh_repo-master/papirus-dark" \
   "$temp_dir/$gh_repo-master/epapirus" \
-  "/usr/share/filezilla/resources/"
+ # "/usr/share/filezilla/resources/"
+   "/Applications/FileZilla.app/Contents/Resources/"
 echo "=> Clearing cache ..."
 rm -rf "/tmp/$gh_repo.tar.gz" "$temp_dir"
 echo "=> Done!"
