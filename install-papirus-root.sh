@@ -32,13 +32,13 @@ wget -O "/tmp/$gh_repo.tar.gz" \
 echo "=> Unpacking archive ..."
 tar -xzf "/tmp/$gh_repo.tar.gz" -C "$temp_dir"
 echo "=> Deleting old $gh_desc ..."
-sudo rm -rf /usr/share/filezilla/resources/papirus \
+rm -rf /usr/share/filezilla/resources/papirus \
   /usr/share/filezilla/resources/papirus-dark \
   /usr/share/filezilla/resources/papirus-adapta \
   /usr/share/filezilla/resources/papirus-adapta-nokto \
   /usr/share/filezilla/resources/epapirus
 echo "=> Installing ..."
-sudo cp -R \
+cp -R \
   "$temp_dir/$gh_repo-master/papirus" \
   "$temp_dir/$gh_repo-master/papirus-adapta" \
   "$temp_dir/$gh_repo-master/papirus-adapta-nokto" \
